@@ -122,3 +122,16 @@ In this section, you’ll visually analyze the cluster analysis results by obser
     rewind
 
     Recall that you learned how to create composite plots in Module 6. If you need a refresher on how to create these plots, review that module. You can also check Composing Plots in the hvPlot documentation.
+
+
+```python
+# Plot a line chart with all the inertia values computed with 
+# the different values of k to visually identify the optimal value for k.
+elbow_plot = df_elbow.hvplot.line(x="k", y="inertia", title="Elbow Curve", xticks=k)
+elbow_plot
+
+```
+---
+## Elbow Curve for Optimal Clusters
+
+[![elbow-curve.png](https://i.postimg.cc/tC18ffvG/elbow-curve.png)](https://postimg.cc/nCJd9dt3)
