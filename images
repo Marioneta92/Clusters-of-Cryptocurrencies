@@ -1,0 +1,6 @@
+# Plot a line chart with all the inertia values computed with 
+# the different values of k to visually identify the optimal value for k.
+elbow_plot = df_elbow.hvplot.line(x="k", y="inertia", title="Elbow Curve", xticks=k)
+elbow_plot
+
+
